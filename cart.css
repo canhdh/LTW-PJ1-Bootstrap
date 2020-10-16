@@ -1,0 +1,44 @@
+.provider {
+    height: 24px;
+}
+
+.container,
+.card,
+.btn,
+.form-control {
+    border-radius: 10px;
+}
+
+.active {
+    color: darkblue;
+    font-weight: bold;
+}
+
+.tbl-head {
+    font-weight: bold;
+}
+
+#amount-product {
+    color: black;
+    font-weight: bold;
+}
+
+#total-money,
+.price {
+    color: rgb(155, 0, 0);
+    font-weight: bold;
+}
+
+#bottom-bar {
+    background-color: rgb(255, 255, 255);
+}
+
+.container-wrapper,
+.navbar-top {
+    background-color: seashell;
+    position: sticky;
+}
+
+.slide {
+    width: 100%;
+}
