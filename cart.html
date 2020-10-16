@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="cart.css">
-        <linK rel="icon" href="images/icon-logo.png"/>
+        <linK rel="icon" href="images/logo-icon-orange.png"/>
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -87,7 +87,30 @@
                     </div>
 
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-dismiss="modal">Lưu</button>
+                        <button type="button" class="btn btn-success" data-dismiss="modal">Lưu</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade modal-xl" id="viewModal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h4 class="modal-title">
+                            Chi tiết sản phẩm
+                        </h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <div class="modal-body">
+                        <img src="images/sanpham1.jpg" alt="San pham 1" class="slide">
+                    </div>
+
+                    <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
                     </div>
 
@@ -140,6 +163,7 @@
                         </a>
                     </div>
                     <div class="float-right">
+                        <button type="button" class="btn btn-sm btn-outline-info" data-toggle="modal" data-target="#viewModal">Chi tíêt</button>
                         <button type="button" class="btn btn-sm btn-outline-success" data-toggle="modal" data-target="#editModal">Chỉnh sửa</button>
                         <button type="button" class="btn btn-sm btn-outline-danger" data-toggle="modal" data-target="#deleteModal">Xóa khỏi giỏ hàng</button>
                     </div>
@@ -176,8 +200,9 @@
                         </a>
                     </div>
                     <div class="float-right">
-                        <button type="button" class="btn btn-sm btn-outline-success">Chỉnh sửa</button>
-                        <button type="button" class="btn btn-sm btn-outline-danger">Xóa khỏi giỏ hàng</button>
+                        <button type="button" class="btn btn-sm btn-outline-info" data-toggle="modal" data-target="#viewModal">Chi tíêt</button>
+                        <button type="button" class="btn btn-sm btn-outline-success" data-toggle="modal" data-target="#editModal">Chỉnh sửa</button>
+                        <button type="button" class="btn btn-sm btn-outline-danger" data-toggle="modal" data-target="#deleteModal">Xóa khỏi giỏ hàng</button>
                     </div>
                 </div>
             </div>
@@ -209,8 +234,9 @@
                         </a>
                     </div>
                     <div class="float-right">
-                        <button type="button" class="btn btn-sm btn-outline-success">Chỉnh sửa</button>
-                        <button type="button" class="btn btn-sm btn-outline-danger">Xóa khỏi giỏ hàng</button>
+                        <button type="button" class="btn btn-sm btn-outline-info" data-toggle="modal" data-target="#viewModal">Chi tíêt</button>
+                        <button type="button" class="btn btn-sm btn-outline-success" data-toggle="modal" data-target="#editModal">Chỉnh sửa</button>
+                        <button type="button" class="btn btn-sm btn-outline-danger" data-toggle="modal" data-target="#deleteModal">Xóa khỏi giỏ hàng</button>
                     </div>
                 </div>
             </div>
@@ -245,8 +271,9 @@
                         </a>
                     </div>
                     <div class="float-right">
-                        <button type="button" class="btn btn-sm btn-outline-success">Chỉnh sửa</button>
-                        <button type="button" class="btn btn-sm btn-outline-danger">Xóa khỏi giỏ hàng</button>
+                        <button type="button" class="btn btn-sm btn-outline-info" data-toggle="modal" data-target="#viewModal">Chi tíêt</button>
+                        <button type="button" class="btn btn-sm btn-outline-success" data-toggle="modal" data-target="#editModal">Chỉnh sửa</button>
+                        <button type="button" class="btn btn-sm btn-outline-danger" data-toggle="modal" data-target="#deleteModal">Xóa khỏi giỏ hàng</button>
                     </div>
                 </div>
             </div>
@@ -278,8 +305,9 @@
                         </a>
                     </div>
                     <div class="float-right">
-                        <button type="button" class="btn btn-sm btn-outline-success">Chỉnh sửa</button>
-                        <button type="button" class="btn btn-sm btn-outline-danger">Xóa khỏi giỏ hàng</button>
+                        <button type="button" class="btn btn-sm btn-outline-info" data-toggle="modal" data-target="#viewModal">Chi tíêt</button>
+                        <button type="button" class="btn btn-sm btn-outline-success" data-toggle="modal" data-target="#editModal">Chỉnh sửa</button>
+                        <button type="button" class="btn btn-sm btn-outline-danger" data-toggle="modal" data-target="#deleteModal">Xóa khỏi giỏ hàng</button>
                     </div>
                 </div>
             </div>
@@ -314,8 +342,9 @@
                         </a>
                     </div>
                     <div class="float-right">
-                        <button type="button" class="btn btn-sm btn-outline-success">Chỉnh sửa</button>
-                        <button type="button" class="btn btn-sm btn-outline-danger">Xóa khỏi giỏ hàng</button>
+                        <button type="button" class="btn btn-sm btn-outline-info" data-toggle="modal" data-target="#viewModal">Chi tíêt</button>
+                        <button type="button" class="btn btn-sm btn-outline-success" data-toggle="modal" data-target="#editModal">Chỉnh sửa</button>
+                        <button type="button" class="btn btn-sm btn-outline-danger" data-toggle="modal" data-target="#deleteModal">Xóa khỏi giỏ hàng</button>
                     </div>
                 </div>
             </div>
@@ -347,8 +376,9 @@
                         </a>
                     </div>
                     <div class="float-right">
-                        <button type="button" class="btn btn-sm btn-outline-success">Chỉnh sửa</button>
-                        <button type="button" class="btn btn-sm btn-outline-danger">Xóa khỏi giỏ hàng</button>
+                        <button type="button" class="btn btn-sm btn-outline-info" data-toggle="modal" data-target="#viewModal">Chi tíêt</button>
+                        <button type="button" class="btn btn-sm btn-outline-success" data-toggle="modal" data-target="#editModal">Chỉnh sửa</button>
+                        <button type="button" class="btn btn-sm btn-outline-danger" data-toggle="modal" data-target="#deleteModal">Xóa khỏi giỏ hàng</button>
                     </div>
                 </div>
             </div>
@@ -383,8 +413,9 @@
                         </a>
                     </div>
                     <div class="float-right">
-                        <button type="button" class="btn btn-sm btn-outline-success">Chỉnh sửa</button>
-                        <button type="button" class="btn btn-sm btn-outline-danger">Xóa khỏi giỏ hàng</button>
+                        <button type="button" class="btn btn-sm btn-outline-info" data-toggle="modal" data-target="#viewModal">Chi tíêt</button>
+                        <button type="button" class="btn btn-sm btn-outline-success" data-toggle="modal" data-target="#editModal">Chỉnh sửa</button>
+                        <button type="button" class="btn btn-sm btn-outline-danger" data-toggle="modal" data-target="#deleteModal">Xóa khỏi giỏ hàng</button>
                     </div>
                 </div>
             </div>
